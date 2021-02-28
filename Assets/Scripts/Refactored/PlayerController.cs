@@ -17,6 +17,7 @@ namespace Refactored
             _animation = GetComponent<PlayerAnimation>();
             _movement = GetComponent<PlayerMovement>();
         }
+        
         private void Update() => _animation.UpdateAnimation(_input.MoveVector);
         
         private void FixedUpdate() => _movement.Move(_input.MoveVector);
