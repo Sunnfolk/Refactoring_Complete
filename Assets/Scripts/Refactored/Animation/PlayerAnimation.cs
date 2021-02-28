@@ -33,7 +33,7 @@ namespace Refactored.Animation
                 // transform.localScale = new Vector2(input.x, 1f);
 
                 // Flips just the sprite
-                _spriteRenderer.flipX = (input.x < 0) ? true : false;
+                _spriteRenderer.flipX = input.x < 0;
             }
         }
     }
