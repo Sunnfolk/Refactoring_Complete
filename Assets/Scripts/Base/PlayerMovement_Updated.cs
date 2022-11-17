@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Base
 {
@@ -8,13 +7,13 @@ namespace Base
         [SerializeField] private float _speed = 5f;
         
         private Vector2 _moveVector;
-        
         private InputActions _input;
         private void Awake() { _input = new InputActions(); }
         private void OnEnable() { _input.Enable(); }
         private void OnDisable() { _input.Disable(); }
 
         private Rigidbody2D _rigidbody2D;
+        
         private Animator _animator;
         private SpriteRenderer _spriteRenderer;
 
